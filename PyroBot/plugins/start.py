@@ -24,4 +24,4 @@ async def delete(bot,message):
 if detectlanguage.simple_detect(message) == ar:
     await message.delete()
 else:
-    await bot.send_message("lmao")
+    print("fine")
