@@ -15,7 +15,7 @@ async def start(bot, update):
         reply_to_message_id=update.message_id
     )
 
-r = detectlanguage.detect(message)
+#r = detectlanguage.detect(message)
 
 
 #cleamimg
