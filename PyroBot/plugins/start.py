@@ -19,7 +19,7 @@ async def start(bot, update):
 
 
 #cleamimg
-@Client.on_message(filters.regex("http") | filters.regex("t.me") | filters.regex("in") | filters.regex("youtu.be") | filters.regex("com") | filters.regex("https") | filters.regex("/" ) | filters.service)
+@Client.on_message(filters.reply & filters.text & ~filters.private & ~filters.edited)
 async def delete(bot,message):
 if detectlanguage.detect(message) == ar:
     await message.delete()
