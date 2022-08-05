@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 Import requests 
 import detectlanguage
 
-detectlanguage.configuration.api_key = "YOUR API KEY"
+detectlanguage.configuration.api_key = "f3e6f45699b018678e73e21b30d87048"
 
 # Enable secure mode (SSL) if you are passing sensitive data
 # detectlanguage.configuration.secure = True
