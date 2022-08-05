@@ -21,7 +21,7 @@ async def start(bot, update):
 #cleamimg
 @Client.on_message(filters.reply & filters.text & ~filters.private & ~filters.edited)
 async def delete(bot,message):
-if detectlanguage.detect(message) == ar:
+if detectlanguage.simple_detect(message) == ar:
     await message.delete()
 else:
     await bot.send_message("lmao")
